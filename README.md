@@ -1,4 +1,4 @@
-# Short urls
+# Geo IP
 
 HTTP API service to get location by IP
 
