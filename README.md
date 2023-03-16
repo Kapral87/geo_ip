@@ -37,18 +37,23 @@ php artisan migrate
 php artisan db:seed
 ```
 
+* Generate app key if it is needed
+```
+php artisan key:generate
+```
+
 ### Executing program
 
-* Send GET request to API endpoint {current_project_domain}/geo2ip?ip={ip} to get location of IP
+* Send GET request to API endpoint {current_project_domain}/ip2geo?ip={ip} to get location of IP
 
 Required GET params
-ip - ip for which we want to know the location. Example {current_project_domain}/geo2ip?ip=176.116.138.182
+ip - ip for which we want to know the location. Example {current_project_domain}/ip2geo?ip=176.116.138.182
 
 
 * Success response
 
 ```
-{"data":{"latitude":54.33333,"longitude":48.4,"country_name":"Russian Federation","city_name":"Ulyanovsk"}}
+{"data":{"latitude":38.89511,"longitude":-77.03637,"country_name":"United States of America","city_name":"Washington"}}
 ```
 
 * Error response
